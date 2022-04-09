@@ -70,5 +70,6 @@ public class TemplateMethodTest {
         };
         log.info("클레스 이름2={}", template2.getClass());
         template2.execute();
+
     }
 }
