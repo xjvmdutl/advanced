@@ -15,7 +15,7 @@ public class OrderRepositoryV2 {
     public void save(TraceId traceId, String itemId){
         TraceStatus status = null;
         try{
-            status = trace.beginSync(traceId, "OrderController.request()");
+            status = trace.beginSync(traceId, "OrderRepository.save()");
             //저장 로직
             if(itemId.equals("ex")){ //예외 발생
                 throw new IllegalStateException("예외 발생");
